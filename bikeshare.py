@@ -57,10 +57,10 @@ def load_data(city, month, day):
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
         df = df[df['month'] == month]
-    
+
     if day != 'all':
         df = df[df['day_of_week'] == day.title()]
-        
+
 
     return df
 def display_raw_data(df):
@@ -73,7 +73,7 @@ def display_raw_data(df):
             break
         print(df[i:i+5])
         answer = input('Would you like to see next 5 rows of raw  data? yes/no: ').lower()
-        i += 5    
+        i += 5
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -134,7 +134,7 @@ def user_stats(df):
             print('\n Most Recent Year of Birth:\n', recent_byear)
             common_byear = int(df['Birth Year'].mode()[0])
             print('\n Most Common Year of Birth:\n', common_byear)
-                
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 def main():
@@ -151,3 +151,5 @@ def main():
             break
 if __name__ == "__main__":
     main()
+
+print("Hello, How are you")    
