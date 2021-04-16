@@ -152,4 +152,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-print("Hello, How are you")    
+print("Hello, How are you")
+
+print("I love Udacity")
