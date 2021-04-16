@@ -15,3 +15,5 @@ Idle IDE, Washington.csv, Chicago.csv, New York City.csv, Atom Editor
 
 ### Credits
 https://stackoverflow.com/questions/10565217/do-you-push-every-single-commit
+### Bugs I Faced
+bugs faced by me were indentation issues in return section of the code due to which all cities were not working and not showing results as expected
